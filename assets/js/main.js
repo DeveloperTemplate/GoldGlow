@@ -7,9 +7,9 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
-$(".banner-slider").owlCarousel({
+$(".offer-slider").owlCarousel({
     responsiveClass: true,
-    loop: false,
+    loop: true,
     margin: 0,
     autoplay: true,
     dots: false,
@@ -28,13 +28,13 @@ $(".banner-slider").owlCarousel({
     }
 });
 
-$(".offer-slider").owlCarousel({
+$(".banner-slider").owlCarousel({
     responsiveClass: true,
     loop: true,
     margin: 0,
     autoplay: true,
-    dots: false,
-    nav: true,
+    dots: true,
+    nav: false,
     responsive: {
         0: {
             items: 1,
@@ -73,7 +73,10 @@ $(".category-slider").owlCarousel({
 $(".product-slider").owlCarousel({
     responsiveClass: true,
     autoplay: true,
+    loop: true,
     dots: false,
+    margin: 20,
+    navText: ['<i class="custom-prev-icon"></i>', '<i class="custom-next-icon"></i>'],
     responsive: {
         0: {
             nav: false,
@@ -98,10 +101,11 @@ $(".blog-slider").owlCarousel({
     loop: false,
     margin: 40,
     autoplay: false,
+    navText: ['<i class="custom-prev-icon"></i>', '<i class="custom-next-icon"></i>'],
     responsive: {
         0: {
             nav: false,
-            dots: true,
+            dots: false,
             items: 1,
         },
         600: {
@@ -113,10 +117,42 @@ $(".blog-slider").owlCarousel({
         1000: {
             nav: true,
             dots: false,
-            items: 3,
+            items: 4,
         },
     }
 });
+
+
+$('.brand-logos').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    dots: false,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+  
 
 /////// Nice Select ///
 $(".nice-option").niceSelect();
@@ -210,9 +246,12 @@ var sticky = header.offset().top;
 $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
         header.addClass('fixed');
+        $('.offer-slider-section').removeClass('d-lg-block').hide();
     } else {
         header.removeClass('fixed');
+        $('.offer-slider-section').addClass('d-lg-block').show();
     }
 });
+
 
 });

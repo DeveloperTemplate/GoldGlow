@@ -22,7 +22,7 @@
 <body>
       <!-- Header Section Start -->
     <header class="bg-white header-container">
-        <div class="offer-slider-section">
+        <div class="offer-slider-section d-none d-sm-none d-md-none d-lg-block">
             <div class="owl-carousel owl-theme offer-slider text-center">
                 <div class="mt-2"> Safikul </div>
                 <div class="mt-2"> Sanjida </div>
@@ -32,7 +32,9 @@
             <div class="d-block d-sm-block d-md-block d-lg-flex py-3">
                 <div class="container-left">
                     <div class="text-center text-sm-center text-md-center text-lg-left">
-                        <img src="./assets/images/logo.png" alt="logo">
+                       <a href="/">
+                           <img src="./assets/images/logo.png" alt="logo">
+                       </a>
                     </div>
                 </div>
                 <div class="container-right">
@@ -41,7 +43,7 @@
                          <a href="#" class="d-table d-sm-table d-md-table d-lg-none mt-2 menu-toggle ml-4"><i class="bi bi-list"></i> </a>
                          <ul class="nav d-none d-sm-none d-md-none d-lg-flex">
                              <li class="nav-item">
-                               <a class="nav-link mr-3" href="#">Home</a>
+                               <a class="nav-link mr-3" href="/">Home</a>
                              </li>
                              <li class="nav-item">
                                <a class="nav-link mr-3" href="#">Glod</a>
@@ -84,14 +86,18 @@
                              <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
                                  <div class="modal-dialog modal-xl">
                                  <div class="modal-content rounded-0">
-                                     <div class="modal-body d-flex">
-                                         <div class="form-group has-search w-100 mb-0 position-relative">
-                                             <span class="bi bi-search form-control-feedback cursor-printer"></span>
-                                             <input type="text" class="form-control py-4 rounded-0" placeholder="Search">
-                                         </div>
-                                         <button type="button" class="close mb-2 ml-3" data-dismiss="modal" aria-label="Close">
-                                             <span aria-hidden="true">&times;</span>
-                                         </button>
+                                     <div class="modal-body">
+                                          <div class="row">
+                                              <div class="col-lg-6 offset-lg-3 d-flex">
+                                                <div class="form-group has-search w-100 mb-0 position-relative">
+                                                    <span class="bi bi-search form-control-feedback cursor-printer"></span>
+                                                    <input type="text" class="form-control py-4 rounded-0" placeholder="Search">
+                                                </div>
+                                                <button type="button" class="close mb-2 ml-3" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                          </div>
                                      </div>
                                  </div>
                                  </div>
@@ -158,7 +164,754 @@
            </div>
     </div>
 
-   
+
+     <!-- Our Policy -->
+     <div class="our-policy container-fluid my-5 px-5">
+        <div class="row text-center icon-link">
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
+                <a  href="#">
+                    <svg class="text-muted mr-3" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                        <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"></path>
+                        <path d="M3 9l4 0"></path>
+                    </svg>
+                    <div>
+                        <h2 class="h6 font-weight-bold text-dark mb-1">Free Shipping</h2>
+                        <p class="text-muted mb-0">Orders over $100</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
+                <a  href="#">
+                    <svg class="h-5 w-5 text-muted mr-3 transition-transform transform hover:translate-y-n2 hover:text-primary" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 11v.01"></path>
+                        <path d="M5.173 8.378a3 3 0 1 1 4.656 -1.377"></path>
+                        <path d="M16 4v3.803a6.019 6.019 0 0 1 2.658 3.197h1.341a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-1.342c-.336 .95 -.907 1.8 -1.658 2.473v2.027a1.5 1.5 0 0 1 -3 0v-.583a6.04 6.04 0 0 1 -1 .083h-4a6.04 6.04 0 0 1 -1 -.083v.583a1.5 1.5 0 0 1 -3 0v-2l0 -.027a6 6 0 0 1 4 -10.473h2.5l4.5 -3h0z"></path>
+                    </svg>
+                    <div class="text-left">
+                        <h2 class="h6 font-weight-bold text-dark mb-1">Money Back</h2>
+                        <p class="text-muted mb-0">With a 30 day</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
+                <a  href="#">
+                    <svg class="h-5 w-5 text-muted mr-3 transition-transform transform hover:translate-y-n2 hover:text-primary" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0049 2L18.3032 4.28071C18.7206 4.41117 19.0049 4.79781 19.0049 5.23519V7H21.0049C21.5572 7 22.0049 7.44772 22.0049 8V10H9.00488V8C9.00488 7.44772 9.4526 7 10.0049 7H17.0049V5.97L11.0049 4.094L5.00488 5.97V13.3744C5.00488 14.6193 5.58406 15.7884 6.56329 16.5428L6.75154 16.6793L11.0049 19.579L14.7869 17H10.0049C9.4526 17 9.00488 16.5523 9.00488 16V12H22.0049V16C22.0049 16.5523 21.5572 17 21.0049 17L17.7848 17.0011C17.3982 17.5108 16.9276 17.9618 16.3849 18.3318L11.0049 22L5.62486 18.3318C3.98563 17.2141 3.00488 15.3584 3.00488 13.3744V5.23519C3.00488 4.79781 3.28913 4.41117 3.70661 4.28071L11.0049 2Z"></path>
+                    </svg>
+                    <div class="text-left">
+                        <h2 class="h6 font-weight-bold text-dark mb-1">Secure Payment</h2>
+                        <p class="text-muted mb-0">Secured payment</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
+                <a  href="#">
+                    <svg class="h-5 w-5 text-muted mr-3 transition-transform transform hover:translate-y-n2 hover:text-primary" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path d="M21 12.22C21 6.73 16.74 3 12 3c-4.69 0-9 3.65-9 9.28-.6.34-1 .98-1 1.72v2c0 1.1.9 2 2 2h1v-6.1c0-3.87 3.13-7 7-7s7 3.13 7 7V19h-8v2h8c1.1 0 2-.9 2-2v-1.22c.59-.31 1-.92 1-1.64v-2.3c0-.7-.41-1.31-1-1.62z"></path>
+                        <circle cx="9" cy="13" r="1"></circle>
+                        <circle cx="15" cy="13" r="1"></circle>
+                        <path d="M18 11.03A6.04 6.04 0 0 0 12.05 6c-3.03 0-6.29 2.51-6.03 6.45a8.075 8.075 0 0 0 4.86-5.89c1.31 2.63 4 4.44 7.12 4.47z"></path>
+                    </svg>
+                    <div class="text-left">
+                        <h2 class="h6 font-weight-bold text-dark mb-1">Online Support</h2>
+                        <p class="text-muted mb-0">Support 24/7</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="container-fluid mt-100">
+        <div class="product">
+            <div class="product-head-title">Featured Products</div>
+            <div class="owl-carousel product-slider">
+                    <div class="card product-card">
+                            <div class="card-image position-relative">
+                                <a href="shop-single.html">
+                                    <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                    <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                                </a>
+                                <div class="product-action d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product-contain px-3 py-4">
+                                <span class="discount-title">Sale</span>
+                                <span class="discount-badge">20% OFF</span>
+                                <div class="product-rating mb-3">
+                                <small class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </small>
+                            </div>
+                                <div class="product-title mb-3">
+                                <a href="shop-single.html">Jewelry</a>
+                                </div>
+                                <div class="product-price">
+                                <div class="d-block">
+                                    <span class="sell-price">$13.00</span>
+                                    <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card product-card">
+                            <div class="card-image position-relative">
+                                <a href="shop-single.html">
+                                    <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                    <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                                </a>
+                                <div class="product-out-stock d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center">
+                                        <span>Out Of Stock</span>
+                                        <a href="wishlist.html" class="btn rounded-0 ml-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-contain px-3 py-4">
+                                <div class="product-rating mb-3">
+                                <small class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </small>
+                            </div>
+                                <div class="product-title mb-3">
+                                <a href="shop-single.html">Jewelry</a>
+                                </div>
+                                <div class="product-price">
+                                <div class="d-block">
+                                    <span class="sell-price">$13.00</span>
+                                    <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card product-card">
+                            <div class="card-image position-relative">
+                                <a href="shop-single.html">
+                                    <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                    <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                                </a>
+                                <div class="product-action d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product-contain px-3 py-4">
+                                <span class="discount-title">Sale</span>
+                                <span class="discount-badge">20% OFF</span>
+                                <div class="product-rating mb-3">
+                                <small class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </small>
+                            </div>
+                                <div class="product-title mb-3">
+                                <a href="shop-single.html">Jewelry</a>
+                                </div>
+                                <div class="product-price">
+                                <div class="d-block">
+                                    <span class="sell-price">$13.00</span>
+                                    <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card product-card">
+                            <div class="card-image position-relative">
+                                <a href="shop-single.html">
+                                    <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                    <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                                </a>
+                                <div class="product-action d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product-contain px-3 py-4">
+                                <span class="discount-title">Sale</span>
+                                <span class="discount-badge">20% OFF</span>
+                                <div class="product-rating mb-3">
+                                <small class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </small>
+                            </div>
+                                <div class="product-title mb-3">
+                                <a href="shop-single.html">Jewelry</a>
+                                </div>
+                                <div class="product-price">
+                                <div class="d-block">
+                                    <span class="sell-price">$13.00</span>
+                                    <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card product-card">
+                            <div class="card-image position-relative">
+                                <a href="shop-single.html">
+                                    <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                    <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                                </a>
+                                <div class="product-action d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product-contain px-3 py-4">
+                                <span class="discount-title">Sale</span>
+                                <span class="discount-badge">20% OFF</span>
+                                <div class="product-rating mb-3">
+                                <small class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </small>
+                            </div>
+                                <div class="product-title mb-3">
+                                <a href="shop-single.html">Jewelry</a>
+                                </div>
+                                <div class="product-price">
+                                <div class="d-block">
+                                    <span class="sell-price">$13.00</span>
+                                    <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start hero banner Section -->
+    <div class="hero-banner-area mt-100">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Single -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="hero-banner-item">
+                        <img src="assets/images/banner/banner1.png" alt="banner">
+                        <div class="hero-banner-item-overly">
+                            <div class="hero-banner-item-overly-full">
+                                <div class="hero-banner-title">
+                                    Most popular
+                                </div>
+                                <div class="hero-banner-sub-title">
+                                    Buy Jewelry
+                                </div>
+                                <div class="show-more">
+                                    <a  href="shop.html">More View</a>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="hero-banner-item">
+                        <img src="assets/images/banner/banner2.png" alt="banner">
+                        <div class="hero-banner-item-overly">
+                            <div class="hero-banner-item-overly-full">
+                                <div class="hero-banner-title">
+                                    Most popular
+                                </div>
+                                <div class="hero-banner-sub-title">
+                                    Buy Jewelry
+                                </div>
+                                <div class="show-more">
+                                    <a  href="shop.html">More View</a>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="hero-banner-item">
+                        <img src="assets/images/banner/banner3.png" alt="banner">
+                        <div class="hero-banner-item-overly">
+                            <div class="hero-banner-item-overly-full">
+                                <div class="hero-banner-title">
+                                    Most popular
+                                </div>
+                                <div class="hero-banner-sub-title">
+                                    Buy Jewelry
+                                </div>
+                                <div class="show-more">
+                                    <a  href="shop.html">More View</a>
+                                </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end hero banner Section -->
+
+    <!-- Latest Products -->
+    <div class="container-fluid mt-100">
+        <div class="product">
+            <div class="product-head-title">Latest Products</div>
+            <div class="owl-carousel product-slider">
+                <div class="card product-card">
+                        <div class="card-image position-relative">
+                            <a href="shop-single.html">
+                                <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                            </a>
+                            <div class="product-action d-flex justify-content-center">
+                                <div class="d-flex justify-content-center">
+                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="product-contain px-3 py-4">
+                            <span class="discount-title">Sale</span>
+                            <span class="discount-badge">20% OFF</span>
+                            <div class="product-rating mb-3">
+                            <small class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </small>
+                        </div>
+                            <div class="product-title mb-3">
+                            <a href="shop-single.html">Jewelry</a>
+                            </div>
+                            <div class="product-price">
+                            <div class="d-block">
+                                <span class="sell-price">$13.00</span>
+                                <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card product-card">
+                        <div class="card-image position-relative">
+                            <a href="shop-single.html">
+                                <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                            </a>
+                            <div class="product-out-stock d-flex justify-content-center">
+                                <div class="d-flex justify-content-center">
+                                    <span>Out Of Stock</span>
+                                    <a href="wishlist.html" class="btn rounded-0 ml-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-contain px-3 py-4">
+                            <div class="product-rating mb-3">
+                            <small class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </small>
+                        </div>
+                            <div class="product-title mb-3">
+                            <a href="shop-single.html">Jewelry</a>
+                            </div>
+                            <div class="product-price">
+                            <div class="d-block">
+                                <span class="sell-price">$13.00</span>
+                                <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card product-card">
+                        <div class="card-image position-relative">
+                            <a href="shop-single.html">
+                                <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                            </a>
+                            <div class="product-action d-flex justify-content-center">
+                                <div class="d-flex justify-content-center">
+                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="product-contain px-3 py-4">
+                            <span class="discount-title">Sale</span>
+                            <span class="discount-badge">20% OFF</span>
+                            <div class="product-rating mb-3">
+                            <small class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </small>
+                        </div>
+                            <div class="product-title mb-3">
+                            <a href="shop-single.html">Jewelry</a>
+                            </div>
+                            <div class="product-price">
+                            <div class="d-block">
+                                <span class="sell-price">$13.00</span>
+                                <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card product-card">
+                        <div class="card-image position-relative">
+                            <a href="shop-single.html">
+                                <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                            </a>
+                            <div class="product-action d-flex justify-content-center">
+                                <div class="d-flex justify-content-center">
+                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="product-contain px-3 py-4">
+                            <span class="discount-title">Sale</span>
+                            <span class="discount-badge">20% OFF</span>
+                            <div class="product-rating mb-3">
+                            <small class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </small>
+                        </div>
+                            <div class="product-title mb-3">
+                            <a href="shop-single.html">Jewelry</a>
+                            </div>
+                            <div class="product-price">
+                            <div class="d-block">
+                                <span class="sell-price">$13.00</span>
+                                <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card product-card">
+                        <div class="card-image position-relative">
+                            <a href="shop-single.html">
+                                <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                            </a>
+                            <div class="product-action d-flex justify-content-center">
+                                <div class="d-flex justify-content-center">
+                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="product-contain px-3 py-4">
+                            <span class="discount-title">Sale</span>
+                            <span class="discount-badge">20% OFF</span>
+                            <div class="product-rating mb-3">
+                            <small class="text-warning">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </small>
+                        </div>
+                            <div class="product-title mb-3">
+                            <a href="shop-single.html">Jewelry</a>
+                            </div>
+                            <div class="product-price">
+                            <div class="d-block">
+                                <span class="sell-price">$13.00</span>
+                                <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        </div>
+    </div>
+
+      <!-- Brand Section -->
+      <div class="container-fluid brand-section mt-50 mb-4">
+        <div class="brand-logos">
+            <div>
+                <img src="https://navneetdwivedi.github.io/Logo_Slider/logo.png" height="100">
+            </div>
+            <div>
+                <img src="https://navneetdwivedi.github.io/Logo_Slider/logo.png" height="100">
+            </div>
+            <div>
+                <img src="https://navneetdwivedi.github.io/Logo_Slider/logo.png" height="100">
+            </div>
+            <div>
+                <img src="https://navneetdwivedi.github.io/Logo_Slider/logo.png" height="100">
+            </div>
+            <div>
+                <img src="https://navneetdwivedi.github.io/Logo_Slider/logo.png" height="100">
+            </div>
+            <div>
+                <img src="https://navneetdwivedi.github.io/Logo_Slider/logo.png" height="100">
+            </div>
+            <div>
+                <img src="https://navneetdwivedi.github.io/Logo_Slider/logo.png" height="100">
+            </div>
+        </div>
+   </div>
+
+       <!-- Start Blog Section -->
+    <div class="blog-section mt-50">
+        <div class="container-fluid">
+          <div class="blog-section-title">
+              Latest Blog
+          </div>
+          <div class="owl-carousel  owl-theme blog-slider">
+                  <div class="blog-item p-1">
+                      <div class="blog-wraper">
+                           <div class="blog-header">
+                                <a href="blog-single.html">
+                                    <div class="img-zoom">
+                                        <img src="./assets/images/blog-1.png" alt="eCommerce Html Template" class="img-fluid w-100">
+                                    </div>
+                                </a>
+                          </div>
+                          <div class="blog-body pb-4 px-3 pt-1 position-relative">
+                              <div class="blog-date"><i class="bi bi-calendar"></i><span class="ml-2">Nov 12, 2023</span></div>
+                              <div>
+                                    <div class="h5 blog-title mt-3">
+                                        <a href="blog-single.html" class="text-inherit">Lorem ipsum dolor sit amet consectetur</a>
+                                    </div>
+                                    <div class="blog-desc my-2">
+                                        <p class="text-inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aperiam?</p>
+                                    </div>
+                                    <div class="text-muted mt-2">
+                                        <a href="blog-single.html" class="read-more">Read More</a>
+                                    </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="blog-item p-1">
+                    <div class="blog-wraper">
+                         <div class="blog-header">
+                              <a href="blog-single.html">
+                                  <div class="img-zoom">
+                                      <img src="./assets/images/blog-1.png" alt="eCommerce Html Template" class="img-fluid w-100">
+                                  </div>
+                              </a>
+                        </div>
+                        <div class="blog-body pb-4 px-3 pt-1 position-relative">
+                            <div class="blog-date"><i class="bi bi-calendar"></i><span class="ml-2">Nov 12, 2023</span></div>
+                            <div>
+                                  <div class="h5 blog-title mt-3">
+                                      <a href="blog-single.html" class="text-inherit">Lorem ipsum dolor sit amet consectetur</a>
+                                  </div>
+                                  <div class="blog-desc my-2">
+                                      <p class="text-inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aperiam?</p>
+                                  </div>
+                                  <div class="text-muted mt-2">
+                                      <a href="blog-single.html" class="read-more">Read More</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item p-1">
+                    <div class="blog-wraper">
+                         <div class="blog-header">
+                              <a href="blog-single.html">
+                                  <div class="img-zoom">
+                                      <img src="./assets/images/blog-1.png" alt="eCommerce Html Template" class="img-fluid w-100">
+                                  </div>
+                              </a>
+                        </div>
+                        <div class="blog-body pb-4 px-3 pt-1 position-relative">
+                            <div class="blog-date"><i class="bi bi-calendar"></i><span class="ml-2">Nov 12, 2023</span></div>
+                            <div>
+                                  <div class="h5 blog-title mt-3">
+                                      <a href="blog-single.html" class="text-inherit">Lorem ipsum dolor sit amet consectetur</a>
+                                  </div>
+                                  <div class="blog-desc my-2">
+                                      <p class="text-inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aperiam?</p>
+                                  </div>
+                                  <div class="text-muted mt-2">
+                                      <a href="blog-single.html" class="read-more">Read More</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item p-1">
+                    <div class="blog-wraper">
+                         <div class="blog-header">
+                              <a href="blog-single.html">
+                                  <div class="img-zoom">
+                                      <img src="./assets/images/blog-1.png" alt="eCommerce Html Template" class="img-fluid w-100">
+                                  </div>
+                              </a>
+                        </div>
+                        <div class="blog-body pb-4 px-3 pt-1 position-relative">
+                            <div class="blog-date"><i class="bi bi-calendar"></i><span class="ml-2">Nov 12, 2023</span></div>
+                            <div>
+                                  <div class="h5 blog-title mt-3">
+                                      <a href="blog-single.html" class="text-inherit">Lorem ipsum dolor sit amet consectetur</a>
+                                  </div>
+                                  <div class="blog-desc my-2">
+                                      <p class="text-inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aperiam?</p>
+                                  </div>
+                                  <div class="text-muted mt-2">
+                                      <a href="blog-single.html" class="read-more">Read More</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item p-1">
+                    <div class="blog-wraper">
+                         <div class="blog-header">
+                              <a href="blog-single.html">
+                                  <div class="img-zoom">
+                                      <img src="./assets/images/blog-1.png" alt="eCommerce Html Template" class="img-fluid w-100">
+                                  </div>
+                              </a>
+                        </div>
+                        <div class="blog-body pb-4 px-3 pt-1 position-relative">
+                            <div class="blog-date"><i class="bi bi-calendar"></i><span class="ml-2">Nov 12, 2023</span></div>
+                            <div>
+                                  <div class="h5 blog-title mt-3">
+                                      <a href="blog-single.html" class="text-inherit">Lorem ipsum dolor sit amet consectetur</a>
+                                  </div>
+                                  <div class="blog-desc my-2">
+                                      <p class="text-inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, aperiam?</p>
+                                  </div>
+                                  <div class="text-muted mt-2">
+                                      <a href="blog-single.html" class="read-more">Read More</a>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+     </div>
+   <!-- End Blog Section -->
+
+     <!-- footer Section -->
+     <footer class="mt-50">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 mb-4 mb-md-0">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <a href="/">
+                                <img src="./assets/images/logo.png" alt="logo">
+                            </a>
+                            <div class="mt-4">
+                                <p class="address">Widgetify Inc,  456 Gadget Avenue,  Techtown, TX 67890, United States of America</p> 
+                                <p class="phone m-0">Call Us:<a href="tel:(987) 654-3210"> (987) 654-3210</a></p>
+                                <p class="email m-0 mt-2"><a href="mailto:info@example.com">info@example.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 mb-md-0">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer_menu">
+                                <p class="footer_title">My Account</p>
+                                <ul class="m-0 p-0 list-unstyled">
+                                    <li><a href="#">Orders</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="#">Track Order</a></li>
+                                    <li><a href="#">Manage Account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer_menu">
+                                <p class="footer_title">Information</p>
+                                <ul class="m-0 p-0 list-unstyled">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer_menu">
+                                <p class="footer_title">Useful Links</p>
+                                <ul class="m-0 p-0 list-unstyled">
+                                    <li><a href="#">Orders</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="#">Track Order</a></li>
+                                    <li><a href="#">Manage Account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer_menu">
+                                <p class="footer_title">Newsletter</p>
+                                <ul class="m-0 p-0 list-unstyled">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Return Policy</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 mt-4 text-white px-3 copyright" >
+            <span>Copyright © 2024. All Rights Reserved. Themes By TemplateRise</span>
+        </div>
+    </footer>
     
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <!-- <script src="./assets/js/bootstrap.bundle.min.js"></script> -->
