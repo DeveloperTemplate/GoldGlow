@@ -1,19 +1,23 @@
 :root {
     --font-family: 14px/14px  'Poppins', sans-serif;
-    --theme-primary: #86AE34;;
-    --theme-secondary: #86AE34;;
+    --theme-primary: #bb5d3c;
+    --theme-secondary: #222;;
 }
 
 body{
   font: var(--font-family);
 }
 
+.bg-primary {
+  backface-color: var(--theme-primary) !important;
+}
+
 a{
-   color: #000000;
+   color: var(--theme-secondary);
 }
 
 a:hover{
-  color: #000000;
+  color: var(--theme-primary);
 }
 
 .mt-50 {
@@ -254,7 +258,7 @@ a:hover{
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: #333
+  color: var(--theme-secondary);
 }
 
 .category-menu a:hover,
@@ -264,7 +268,7 @@ a:hover{
 
 .category-menu > ul > li:hover > a,
 .category-menu ul ul li:hover > a {
-  color: #007bff;
+  color: var(--theme-primary);
   background-color: #e9ecef
 }
 
@@ -310,7 +314,7 @@ a:hover{
 
 .category-menu .menu-title {
   display: block;
-  background: #007bff;
+  background: var(--theme-primary);
   color: #fff;
   padding: 14px 15px;
   cursor: pointer
@@ -484,11 +488,13 @@ a:hover{
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
+  color: var(--theme-secondary);
 }
 
 .product .product-contain .product-price .sell-price {
    font-size: 16px !important;
    font-weight: 600;
+   color: var(--theme-primary);
 }
 
 .product-action > div {
@@ -631,12 +637,17 @@ a:hover{
 
 /* Footer Section */
 footer {
-  background-color: #f8f9fa;
+  background-color: var(--theme-secondary);
   padding: 40px 0px 0px 0px;
 }
 
 footer .address {
    line-height: 18px;
+   color: #ccc !important;
+}
+
+footer .email, footer .phone, footer .email a, footer .phone a {
+  color: #ccc !important;
 }
 
 .footer_title {
@@ -645,10 +656,11 @@ footer .address {
     margin-bottom: 20px;
     margin-top: 9px;
     text-transform: uppercase;
+    color: #fff !important;
 }
   
 .footer_menu a {
-    color: #000;
+    color: #ccc !important;
     display: block;
     text-decoration: none;
     line-height: 24px;
@@ -656,8 +668,7 @@ footer .address {
 }
 
 .copyright {
-  /* background-color: var(--theme-primary); */
-  color: #000 !important;
+  color: #ccc !important;
 }
 
   
@@ -931,4 +942,62 @@ footer .address {
 
 .custom-btn-p {
   padding: 10px;
+}
+
+/* notification */
+.notification {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 0 0 18px 0 rgba(0,0,0,.1);
+    bottom: 20px;
+    left: 20px;
+    font-size: 15px;
+    width: 350px;
+    position: fixed;
+    z-index: 1111;
+    font-size: 14px;
+}
+
+.notification img {
+    width: 80px;
+    height: 60px;
+}
+
+.notification-text {
+  margin-left: 10px;
+}
+.notification-text p{
+  font-size: 13px;
+  margin: 0px 0px 5px 0px !important;
+}
+.notification-text h4{
+  font-size: 13px;
+  display: block;
+  margin: 4px 0px !important;
+}
+
+.close-button {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  border: none;
+  background: var(--theme-secondary);
+  cursor: pointer;
+  color: #fff;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+.close-button:hover {
+  color: #fff;
+  background-color:red;
 }

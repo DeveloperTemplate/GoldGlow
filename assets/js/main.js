@@ -129,6 +129,8 @@ $('.brand-logos').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
+    speed: 600, // Adjust the speed for smoother transitions
+    cssEase: 'ease-in-out', // Smooth easing effect
     dots: false,
     arrows: false,
     responsive: [
@@ -152,6 +154,7 @@ $('.brand-logos').slick({
         }
     ]
 });
+
   
 
 /////// Nice Select ///
@@ -275,5 +278,15 @@ $('.toggle-password').click(function() {
     $(this).html(icon);
 });
 
+
+ // Attach the click event
+ $('.close-button').click(function() {
+    $(this).closest('.notification').stop(true, true).slideUp();
+});
+
+// Show and automatically hide the notification every 15 seconds
+setInterval(function() {
+    $('.notification').stop(true, true).slideDown().delay(5000).slideUp();
+}, 15000); // 15 seconds interval
 
 });
