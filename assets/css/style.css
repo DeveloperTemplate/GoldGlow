@@ -29,6 +29,7 @@ a:hover{
   padding-left: 70px !important;  
 }
 
+
 @media (max-width: 768px) {
 .container-fluid {
     padding-right: 15px !important;
@@ -119,10 +120,11 @@ a:hover{
 }
 
 .form-control:focus {
-  box-shadow: none;
-  outline: none;
-  border-color: unset;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #ced4da !important;
 }
+
 
 /* main menu */
 
@@ -654,7 +656,8 @@ footer .address {
 }
 
 .copyright {
-  background-color: var(--theme-primary);
+  /* background-color: var(--theme-primary); */
+  color: #000 !important;
 }
 
   
@@ -909,4 +912,23 @@ footer .address {
   text-transform: uppercase;
   padding: 0;
   text-decoration: underline;
+}
+
+.auth-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+.auth-section .toggle-password {
+  position: absolute;
+  right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;
+}
+
+.auth-section input {
+    padding: 23px 10px 23px 10px;
+}
+
+.custom-btn-p {
+  padding: 10px;
 }
