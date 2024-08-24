@@ -223,10 +223,10 @@ $('.menu-toggle').click(function(event) {
     var $icon = $(this).find('i');
     if ($menu.is(':visible')) {
         clicked = true;
-      $icon.removeClass('bi-list').addClass('bi-x');
+      $icon.removeClass('fa-bars').addClass('fa-times');
     } else {
         clicked = false;
-      $icon.removeClass('bi-x').addClass('bi-list');
+      $icon.removeClass('fa-times').addClass('fa-bars');
     }
   });
 
@@ -237,7 +237,7 @@ $(document).click(function(event) {
         var $toggle = $('.menu-toggle');
         if ($menu.is(':visible') && !$(event.target).closest('.menu-toggle, .category-menu').length) {
             $menu.hide();
-            $toggle.find('i').removeClass('bi-x').addClass('bi-list');
+            $toggle.find('i').removeClass('fa-times').addClass('fa-bars');
         }
     }
 });
@@ -286,7 +286,7 @@ $('.toggle-password').click(function() {
 
 // Show and automatically hide the notification every 15 seconds
 setInterval(function() {
-    $('.notification').stop(true, true).slideDown().delay(5000).slideUp();
+    // $('.notification').stop(true, true).slideDown().delay(5000).slideUp();
 }, 15000); // 15 seconds interval
 
 });

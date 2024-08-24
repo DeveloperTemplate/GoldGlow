@@ -6,10 +6,8 @@
     <title>Jewelry eCommerce</title>
     <meta name="description" content="" >
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./assets/font/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/plugin/nice-select/nice-select.css">
     <link rel="stylesheet" href="./assets/plugin/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/plugin/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
@@ -38,7 +36,7 @@
                 <div class="container-right">
                     <div class="row">
                         <div class="col-6 col-sm-6 col-md-6 col-lg-8 pl-0 main-menu">
-                         <a href="#" class="d-table d-sm-table d-md-table d-lg-none mt-2 menu-toggle ml-4"><i class="bi bi-list"></i> </a>
+                         <a href="#" class="d-table d-sm-table d-md-table d-lg-none mt-2 menu-toggle ml-4"><i class="fas fa-bars"></i> </a>
                          <ul class="nav d-none d-sm-none d-md-none d-lg-flex">
                              <li class="nav-item">
                                <a class="nav-link mr-3" href="/">Home</a>
@@ -56,7 +54,14 @@
                                 <a class="nav-link mr-3" href="#">Page</a>
                                 <div>
                                     <ul class="list-unstyled">
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="shop-single.html">Shop Details</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="wishlist.html">Wishlist</a></li>
                                         <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-single.html">Blog Details</a></li>
                                         <li><a href="#">Account</a>
                                             <div>
                                                 <ul class="list-unstyled">
@@ -74,13 +79,13 @@
                         <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                          <ul class="nav justify-content-end">
                              <li class="nav-item">
-                               <a class="nav-link" href="#" data-toggle="modal" data-target="#searchModal"> <i class="bi bi-search"></i> </a>
+                               <a class="nav-link" href="#" data-toggle="modal" data-target="#searchModal"> <i class="fas fa-search"></i> </a>
                              </li>
                              <li class="nav-item">
                                 <a class="nav-link" href="login.html"> <i class="far fa-user"></i></i> </a>
                               </li>
                              <li class="nav-item">
-                               <a class="nav-link font-weight-bold d-flex" href="#"><i class="bi bi-cart"></i> <span class="d-none d-sm-none d-md-none d-lg-block ml-0 ml-sm-0 ml-md-0 ml-lg-2"><span>0</span> <span>items</span></span> </a>
+                               <a class="nav-link font-weight-bold d-flex" href="#"><i class="fas fa-shopping-cart mt-1"></i> <span class="d-none d-sm-none d-md-none d-lg-block ml-0 ml-sm-0 ml-md-0 ml-lg-2"><span>0</span> <span>items</span></span> </a>
                              </li>
                            </ul>
                            <div class="search-container">
@@ -92,7 +97,7 @@
                                           <div class="row">
                                               <div class="col-lg-6 offset-lg-3 d-flex">
                                                 <div class="form-group has-search w-100 mb-0 position-relative">
-                                                    <span class="bi bi-search form-control-feedback cursor-printer"></span>
+                                                    <span class="fas fa-search form-control-feedback cursor-printer"></span>
                                                     <input type="text" class="form-control py-4 rounded-0" placeholder="Search">
                                                 </div>
                                                 <button type="button" class="close mb-2 ml-3" data-dismiss="modal" aria-label="Close">
@@ -112,58 +117,57 @@
          </div>
     </header>
     <!-- Header Section End -->
-    <div class="container-fluid mt-2 mt-sm-2 mt-md-2 mt-lg-4 position-relative">
-           <div class="d-block d-sm-block d-md-block d-lg-flex">
-               <div class="container-left">
-                <div class="category-menu">
-                    <div class="menu-title d-none d-sm-none d-md-none d-lg-block"><i class="bi bi-list mr-2"></i>Jewelry Collections</div>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#" class="more-menu">Accessory Types</a>
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="#" class="more-menu">Chokers</a>
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Gold Choker</a></li>
-                                        <li><a href="#">Silver Choker</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Pendants</a></li>
-                                <li><a href="#">Chains</a></li>
-                                <li><a href="#">Collar Necklaces</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Pearls</a></li>
-                        <li><a href="#">Silver Pieces</a></li>
-                        <li>
-                            <a href="#" class="more-menu">Chain Jewelry</a>
-                            <ul class="list-unstyled">
-                                <li><a href="#">Pendants</a></li>
-                                <li><a href="#">Bracelets</a></li>
-                                <li><a href="#">Belly Chains</a></li>
-                                <li><a href="#">Nose Rings</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Cufflinks</a></li>
-                        <li><a href="#">Black Cardamom Jewelry</a></li>
-                        <li><a href="#">Fancy Earrings</a></li>
-                        <li><a href="#">Platinum Pieces</a></li>
-                        <li><a href="#">Gold Items</a></li>
-                        <li><a href="#">Toe Rings</a></li>
-                        <li><a href="#">Featured Items</a></li>
-                    </ul>
-                </div>
-                
-               </div>
-               <div class="container-right">
-                    <div class="banner">
-                        <div class="owl-carousel owl-theme banner-slider">
-                            <div> <img src="./assets/images/banner/1.png"  alt="eCommerce Template"> </div>
-                            <div> <img src="./assets/images/banner/2.png"  alt="eCommerce Template"> </div>
-                        </div>
+    <div class="container-fluid mt-2 mt-sm-2 mt-md-2 mt-lg-4">
+            <div class="d-block d-sm-block d-md-block d-lg-flex">
+                <div class="container-left">
+                    <div class="category-menu">
+                        <div class="menu-title d-none d-sm-none d-md-none d-lg-block"><i class="fas fa-bars mr-2"></i></i>Jewelry Collections</div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="more-menu">Accessory Types</a>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#" class="more-menu">Chokers</a>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Gold Choker</a></li>
+                                            <li><a href="#">Silver Choker</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Pendants</a></li>
+                                    <li><a href="#">Chains</a></li>
+                                    <li><a href="#">Collar Necklaces</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pearls</a></li>
+                            <li><a href="#">Silver Pieces</a></li>
+                            <li>
+                                <a href="#" class="more-menu">Chain Jewelry</a>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Pendants</a></li>
+                                    <li><a href="#">Bracelets</a></li>
+                                    <li><a href="#">Belly Chains</a></li>
+                                    <li><a href="#">Nose Rings</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cufflinks</a></li>
+                            <li><a href="#">Black Cardamom Jewelry</a></li>
+                            <li><a href="#">Fancy Earrings</a></li>
+                            <li><a href="#">Platinum Pieces</a></li>
+                            <li><a href="#">Gold Items</a></li>
+                            <li><a href="#">Toe Rings</a></li>
+                            <li><a href="#">Featured Items</a></li>
+                        </ul>
                     </div>
-               </div>
-           </div>
+                </div>
+                <div class="container-right">
+                     <div class="banner">
+                         <div class="owl-carousel owl-theme banner-slider">
+                             <div> <img src="./assets/images/banner/1.png"  alt="eCommerce Template"> </div>
+                             <div> <img src="./assets/images/banner/2.png"  alt="eCommerce Template"> </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
     </div>
 
 
@@ -239,9 +243,9 @@
                                 </a>
                                 <div class="product-action d-flex justify-content-center">
                                     <div class="d-flex justify-content-center">
-                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
-                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
-                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="fas fa-shopping-cart mt-1"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="fas fa-eye"></i></a>
                                     </div>
                                 </div> 
                             </div>
@@ -277,7 +281,7 @@
                                 <div class="product-out-stock d-flex justify-content-center">
                                     <div class="d-flex justify-content-center">
                                         <span>Out Of Stock</span>
-                                        <a href="wishlist.html" class="btn rounded-0 ml-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                        <a href="wishlist.html" class="btn rounded-0 ml-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -310,46 +314,9 @@
                                 </a>
                                 <div class="product-action d-flex justify-content-center">
                                     <div class="d-flex justify-content-center">
-                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
-                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
-                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
-                                    </div>
-                                </div> 
-                            </div>
-                            <div class="product-contain px-3 py-4">
-                                <span class="discount-title">Sale</span>
-                                <span class="discount-badge">20% OFF</span>
-                                <div class="product-rating mb-3">
-                                <small class="text-warning">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-half"></i>
-                                </small>
-                            </div>
-                                <div class="product-title mb-3">
-                                <a href="shop-single.html">Jewelry</a>
-                                </div>
-                                <div class="product-price">
-                                <div class="d-block">
-                                    <span class="sell-price">$13.00</span>
-                                    <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
-                                </div>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="card product-card">
-                            <div class="card-image position-relative">
-                                <a href="shop-single.html">
-                                    <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
-                                    <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
-                                </a>
-                                <div class="product-action d-flex justify-content-center">
-                                    <div class="d-flex justify-content-center">
-                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
-                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
-                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="fas fa-shopping-cart mt-1"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="fas fa-eye"></i></a>
                                     </div>
                                 </div> 
                             </div>
@@ -384,9 +351,46 @@
                                 </a>
                                 <div class="product-action d-flex justify-content-center">
                                     <div class="d-flex justify-content-center">
-                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
-                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
-                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="fas fa-shopping-cart mt-1"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="fas fa-eye"></i></a>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="product-contain px-3 py-4">
+                                <span class="discount-title">Sale</span>
+                                <span class="discount-badge">20% OFF</span>
+                                <div class="product-rating mb-3">
+                                <small class="text-warning">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </small>
+                            </div>
+                                <div class="product-title mb-3">
+                                <a href="shop-single.html">Jewelry</a>
+                                </div>
+                                <div class="product-price">
+                                <div class="d-block">
+                                    <span class="sell-price">$13.00</span>
+                                    <span class="text-muted strike-through ml-2"><s>$15.00</s></span>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="card product-card">
+                            <div class="card-image position-relative">
+                                <a href="shop-single.html">
+                                    <img src="./assets/images/product/1.png" class="first-image" alt="eCommerce Template">
+                                    <img src="./assets/images/product/2.png" class="second-image" alt="eCommerce Template">
+                                </a>
+                                <div class="product-action d-flex justify-content-center">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                                        <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="fas fa-shopping-cart mt-1"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                        <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="fas fa-eye"></i></a>
                                     </div>
                                 </div> 
                             </div>
@@ -496,9 +500,9 @@
                             </a>
                             <div class="product-action d-flex justify-content-center">
                                 <div class="d-flex justify-content-center">
-                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
-                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
-                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="fas fa-shopping-cart mt-1"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="fas fa-eye"></i></a>
                                 </div>
                             </div> 
                         </div>
@@ -534,7 +538,7 @@
                             <div class="product-out-stock d-flex justify-content-center">
                                 <div class="d-flex justify-content-center">
                                     <span>Out Of Stock</span>
-                                    <a href="wishlist.html" class="btn rounded-0 ml-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
+                                    <a href="wishlist.html" class="btn rounded-0 ml-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -567,9 +571,9 @@
                             </a>
                             <div class="product-action d-flex justify-content-center">
                                 <div class="d-flex justify-content-center">
-                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
-                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
-                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="fas fa-shopping-cart mt-1"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="fas fa-eye"></i></a>
                                 </div>
                             </div> 
                         </div>
@@ -604,9 +608,9 @@
                             </a>
                             <div class="product-action d-flex justify-content-center">
                                 <div class="d-flex justify-content-center">
-                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
-                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
-                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="fas fa-shopping-cart mt-1"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="fas fa-eye"></i></a>
                                 </div>
                             </div> 
                         </div>
@@ -641,9 +645,9 @@
                             </a>
                             <div class="product-action d-flex justify-content-center">
                                 <div class="d-flex justify-content-center">
-                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="bi bi-heart"></i></a>
-                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="bi bi-cart"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
-                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="bi bi-eye"></i></a>
+                                    <a href="wishlist.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"><i class="far fa-heart"></i></a>
+                                    <a href="cart.html" class="btn rounded-0 d-flex" data-bs-toggle="tooltip" data-bs-placement="top" title="Cart"><i class="fas fa-shopping-cart mt-1"></i><span class="ml-2 d-none d-sm-none d-md-none d-lg-block">Add to cart</span></a>
+                                    <a href="checkout.html" class="btn rounded-0" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><i class="fas fa-eye"></i></a>
                                 </div>
                             </div> 
                         </div>
@@ -670,7 +674,7 @@
                             </div>
                         </div>
                 </div>
-        </div>
+            </div>
         </div>
     </div>
 
@@ -757,7 +761,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
                 <div class="blog-item p-1">
                     <div class="blog-wraper">
                          <div class="blog-header">
@@ -843,7 +847,7 @@
      <footer class="mt-100">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 mb-4 mb-md-0">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
                     <p class="footer_title">About Information</p>
                     <div class="mt-4 pr-5">
                         <p class="address">Widgetify Inc,  456 Gadget Avenue,  Techtown, TX 67890, United States of America</p> 
@@ -851,7 +855,7 @@
                         <p class="email m-0 mt-2"><a href="mailto:info@example.com">info@example.com</a></p>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-3 mb-md-0">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
                     <div class="footer_menu">
                         <p class="footer_title">Quick Links</p>
                         <ul class="m-0 p-0 list-unstyled">
@@ -862,7 +866,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-3 mb-md-0">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 mb-sm-4 mb-md-4 mb-lg-0">
                     <div class="footer_menu">
                         <p class="footer_title">Contact Us</p>
                         <ul class="m-0 p-0 list-unstyled">
@@ -882,27 +886,25 @@
     </footer>
 
     <!-- notification -->
-    <div class="notification" style="display: none;">
+    <div class="notification">
         <div class="d-flex position-relative">
             <a href="#"><img src="./assets/images/product/1.png" alt="Rose gold pendant"></a>
             <div class="notification-text">
                 <p class="m-0">Someone in New York, USA purchased a</p>
                 <h4 class="m-0"><a href="#" >Pendant in rose gold</a></h4>
-                <small>About 8 days ago</small>
+                <small class="text-primary">About 8 days ago</small>
             </div>
             <button class="close-button"><i class="fas fa-times"></i></button>
         </div>
     </div>
     <!-- end notification -->
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <!-- <script src="./assets/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.ez-plus.js"></script>
     <script src="./assets/plugin/nice-select/jquery.nice-select.min.js"></script>
     <script src="./assets/plugin/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="./assets/plugin/nouislider/nouislider.min.js"></script>
     <script src="./assets/plugin/slick/slick.min.js"></script>
-    <script src="./assets/js/timer.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
