@@ -286,29 +286,23 @@ $('.toggle-password').click(function() {
 
 // Show and automatically hide the notification every 15 seconds
 setInterval(function() {
-    // $('.notification').stop(true, true).slideDown().delay(5000).slideUp();
+    $('.notification').stop(true, true).slideDown().delay(5000).slideUp();
 }, 15000); // 15 seconds interval
 
 
 // $('#open-sidebar').click(()=>{
-     
 //     // add class active on #sidebar
 //     $('#sidebar').addClass('active');
-    
 //     // show sidebar overlay
 //     $('#sidebar-overlay').removeClass('d-none');
-  
 //  });
 
 
 //  $('#sidebar-overlay').click(function(){
-   
 //     // add class active on #sidebar
 //     $('#sidebar').removeClass('active');
-    
 //     // show sidebar overlay
 //     $(this).addClass('d-none');
-  
 //  });
 
 
