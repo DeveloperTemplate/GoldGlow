@@ -289,4 +289,99 @@ setInterval(function() {
     // $('.notification').stop(true, true).slideDown().delay(5000).slideUp();
 }, 15000); // 15 seconds interval
 
+
+// $('#open-sidebar').click(()=>{
+     
+//     // add class active on #sidebar
+//     $('#sidebar').addClass('active');
+    
+//     // show sidebar overlay
+//     $('#sidebar-overlay').removeClass('d-none');
+  
+//  });
+
+
+//  $('#sidebar-overlay').click(function(){
+   
+//     // add class active on #sidebar
+//     $('#sidebar').removeClass('active');
+    
+//     // show sidebar overlay
+//     $(this).addClass('d-none');
+  
+//  });
+
+
+
+$('.gallery-parent').each(function () {
+    // We finding any "gallery-parent" and find child with class "gallery-top" and "gallery-thumbs" for multiple using plugin
+    let thumbs = $(this).children('.gallery-thumbs'),
+      top = $(this).children('.gallery-top');
+  
+    // activation carousel plugin
+    let galleryThumbs = new Swiper(thumbs, {
+      spaceBetween: 5,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+      },
+    });
+    let galleryTop = new Swiper(top, {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+  
+    // change carousel item height
+    // gallery-top
+    let productCarouselTopWidth = top.outerWidth();
+    top.css('height', productCarouselTopWidth);
+  
+    // gallery-thumbs
+    let productCarouselThumbsItemWith = thumbs.find('.swiper-slide').outerWidth();
+    thumbs.css('height', productCarouselThumbsItemWith);
+  });
+  
+  // activation zoom plugin
+  let $easyzoom = $('.easyzoom').easyZoom();
+
+
+  
+document.addEventListener('DOMContentLoaded', function () {
+    const stars = document.querySelectorAll('.star');
+    const ratingValue = document.getElementById('rating-number');
+
+    if (!ratingValue) {
+        console.error('Element with id "rating-number" not found!');
+        return;
+    }
+
+    stars.forEach(star => {
+        star.addEventListener('click', function () {
+            const selectedValue = this.getAttribute('data-value');
+            ratingValue.value = selectedValue;
+            stars.forEach(s => {
+                s.classList.remove('selected');
+                if (s.getAttribute('data-value') <= selectedValue) {
+                    s.classList.add('selected');
+                }
+            });
+        });
+    });
+});
+
+  
+
 });
