@@ -1554,3 +1554,23 @@ footer .email, footer .phone, footer .email a, footer .phone a {
 .star.selected {
     color: gold;
 }
+
+.cart-section h2 {
+  font-size: 24px;
+}
+
+.cart-section ul li {
+  font-size: 15px;
+  margin-top: 14px;
+}
+
+.cart-section ul li:last-child {
+  margin-top: 20px;
+}
+
+.wishlist-section img {
+  border-radius: 4px 4px 0 0;
+}
+.wishlist-section .close-wishlist {
+right: -12px; top: -12px; padding: 2px 4px;
+}
