@@ -135,10 +135,95 @@
         </div>
       </nav>
     <!-- end breadcrumbs -->
-     
+     <style>
+           .box-title {
+              border-bottom: 3px solid #eee;
+              position: relative;
+           }
+           .title-under-line::after {
+             content: '';
+             height: 2.5px; 
+             background-color: var(--theme-primary); 
+             bottom: -10px; 
+             left: 0;
+             position: absolute;
+             width: 100%;
+             display: block;
+           }
+     </style>
     <section class="checkout-section">
       <div class="container mt-50 px-4">
-        
+           <div class="row">
+               <div class="col-lg-7">
+                <div class="mb-4 box-title d-flex flex-wrap align-items-center justify-content-between border-bottom-2  pb-1">
+                  <h1 class="h4 font-weight-bold text-dark position-relative m-0 title-under-line">
+                    Delivery Address
+                  </h1>
+                  <button class="btn  position-relative d-flex align-items-center" data-target=".modal-address" type="button">
+                    <svg class="mr-1" height="16" width="16" stroke="currentColor" fill="currentColor" stroke-width="0" baseProfile="tiny" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M22.262 10.468c-3.39-2.854-9.546-8.171-9.607-8.225l-.655-.563-.652.563c-.062.053-6.221 5.368-9.66 8.248-.438.394-.688.945-.688 1.509 0 1.104.896 2 2 2h1v6c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-6h1c1.104 0 2-.896 2-2 0-.598-.275-1.161-.738-1.532zm-8.262 9.532h-4v-5h4v5zm4-8l.002 8h-3.002v-6h-6v6h-3v-8h-3.001c2.765-2.312 7.315-6.227 9.001-7.68 1.686 1.453 6.234 5.367 9 7.681l-3-.001z"></path>
+                    </svg>
+                    Saved addresses
+                  </button>
+                </div>
+
+                   <div class="delivery-address">
+                    <form class="form-row">
+                        <div class="form-group col-md-12">
+                          <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                      <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Phone">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <input type="text" class="form-control" placeholder="Company Name (Optional)">
+                      </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" placeholder="Company Address (Optional)">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" placeholder="House Number Or Street Number">
+                    </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" placeholder="Apartment, unit etc. (optional)">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <select class="nice-option form-control">
+                      <option value="">Select your Country</option>
+                      <option>United Kingdom (UK)</option>
+                      <option>United States (US)</option>
+                      <option>Bangladesh</option>
+                      <option>Select Country</option>
+                      <option>Australia</option>
+                      <option>Canada</option>
+                      <option>China</option>
+                      <option>Morocco</option>
+                      <option>Saudi Arabia</option>
+                  </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="City or Town">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="State">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <input type="text" class="form-control" placeholder="Zip">
+                  </div>
+                 
+                      <div class="form-group col-md-12">
+                        <textarea  class="form-control" placeholder="Address"></textarea>
+                      </div>
+                    </form>
+                   </div>
+               </div>
+               <div class="col-lg-5">
+
+               </div>
+           </div>
       </div>
     </section>
 
