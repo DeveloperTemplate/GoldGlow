@@ -680,7 +680,7 @@ a:hover{
 
 
 /* Full width and top-aligned modal */
-.modal-dialog {
+#searchModal .modal-dialog {
   width: 100%;
   margin: 0;
   height: auto;
@@ -691,11 +691,11 @@ a:hover{
   right: 0;
 }
 
-.modal-content {
+#searchModal .modal-content {
   border-radius: 0;
 }
 
-.modal-body {
+#searchModal .modal-body {
   padding: 20px;
 }
 
@@ -1581,4 +1581,93 @@ footer .email, footer .phone, footer .email a, footer .phone a {
 }
 .wishlist-section .close-wishlist {
 right: -12px; top: -12px; padding: 2px 4px;
+}
+
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.custom-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.custom-checkbox label:has(input[type=radio]:checked) {
+  border-color: var(--theme-primary);
+  background-color: var(--theme-primary);
+}
+
+.custom-checkbox input[type=radio] {
+  position: relative;
+  width: 1.2rem;
+  height: 1.2rem;
+  right: 1rem;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+.custom-checkbox input[type=radio]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.20;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+  background-color: var(--theme-primary);
+}
+
+.custom-checkbox input[type=radio]:checked::after {
+  opacity: 1;
+}
+
+.btn-close {
+  top: -20px;
+  right: -15px;
+}
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal.zoom .modal-dialog {
+  animation: zoomIn 0.3s ease-out;
+}
+
+
+.box-title {
+  border-bottom: 3px solid #eee;
+  position: relative;
+}
+.title-under-line::after {
+ content: '';
+ height: 2.5px; 
+ background-color: var(--theme-primary); 
+ bottom: -10px; 
+ left: 0;
+ position: absolute;
+ width: 100%;
+ display: block;
+}
+.order-summary-item-box {
+max-height: 280px; 
+overflow-y: auto;
 }
