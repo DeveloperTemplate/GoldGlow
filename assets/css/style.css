@@ -187,10 +187,11 @@ a:hover{
 }
 
 /* main menu */
+
 .main-menu a {
   text-decoration: none !important;
 }
-.main-menu > ul > li {
+.main-menu  li {
   position: relative;
 }
 
@@ -230,16 +231,12 @@ a:hover{
   color: #000;
 }
 
-.main-menu > ul > li > div > ul > li {
-  /* position: relative; */
-}
-
 
 /* Additional styles for the nested submenu */
 .main-menu > ul > li > div > ul > li > div {
   display: none;
   position: absolute;
-  top: 70%;
+  top: 0;
   left: 100%;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -1670,4 +1667,11 @@ right: -12px; top: -12px; padding: 2px 4px;
 .order-summary-item-box {
 max-height: 280px; 
 overflow-y: auto;
+}
+
+.color-box {
+  width: 14px; 
+  height: 14px; 
+  background-color: #63b3ed; 
+  border-radius: 50%;
 }
