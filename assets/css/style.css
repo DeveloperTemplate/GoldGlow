@@ -1032,15 +1032,24 @@ footer .email, footer .phone, footer .email a, footer .phone a {
     padding: 23px 10px 23px 10px;
 }
 
-.nice-option {
+.checkout-section .nice-option {
   display: block;
   width: 100%;
-  /* height: 55px; */
   line-height: 0px !important;
   font-weight: 500;
   color: #757575!important;
   outline: none!important;
   padding: 23px 10px 23px 10px;
+}
+
+.shop-section .nice-option {
+  display: block;
+  width: 100%;
+  height: 35px !important;
+  line-height: 35px !important;
+  font-weight: 500;
+  color: #757575!important;
+  outline: none!important;
 }
 
 .custom-btn-p {
@@ -1419,6 +1428,10 @@ footer .email, footer .phone, footer .email a, footer .phone a {
   object-fit: contain;
 }
 
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 25px !important;
+}
 
 .size-section p, .color-section p {
   font-size: 16px;
