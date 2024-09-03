@@ -123,9 +123,10 @@ $(".blog-slider").owlCarousel({
 });
 
 
+
 $('.brand-logos').slick({
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 6,  // Set default number of slides to show on large screens
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -137,17 +138,17 @@ $('.brand-logos').slick({
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4
+                slidesToShow: 4  // This setting now matches the default
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 768,
             settings: {
-                slidesToShow: 3
+                slidesToShow: 2
             }
         },
         {
-            breakpoint: 0,
+            breakpoint: 480,
             settings: {
                 slidesToShow: 2
             }
@@ -155,7 +156,7 @@ $('.brand-logos').slick({
     ]
 });
 
-  
+
 
 /////// Nice Select ///
 $(".nice-option").niceSelect();
