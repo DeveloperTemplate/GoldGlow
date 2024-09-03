@@ -217,7 +217,7 @@ if (slider && priceRangeValue) {
 let clicked = false;
 $('.menu-toggle').click(function(event) {
     event.preventDefault();
-    var $menu = $('.category-menu > ul');
+    var $menu = $('.category-menu');
     $menu.toggle();
     
     var $icon = $(this).find('i');
@@ -233,7 +233,7 @@ $('.menu-toggle').click(function(event) {
 // Click outside to hide menu
 $(document).click(function(event) {
     if(clicked == true){
-        var $menu = $('.category-menu > ul');
+        var $menu = $('.category-menu');
         var $toggle = $('.menu-toggle');
         if ($menu.is(':visible') && !$(event.target).closest('.menu-toggle, .category-menu').length) {
             $menu.hide();
@@ -284,28 +284,17 @@ $('.toggle-password').click(function() {
     $(this).closest('.notification').stop(true, true).slideUp();
 });
 
-// Show and automatically hide the notification every 15 seconds
-setInterval(function() {
-    $('.notification').stop(true, true).slideDown().delay(5000).slideUp();
-}, 15000); // 15 seconds interval
 
-
-// $('#open-sidebar').click(()=>{
-//     // add class active on #sidebar
-//     $('#sidebar').addClass('active');
-//     // show sidebar overlay
-//     $('#sidebar-overlay').removeClass('d-none');
-//  });
-
-
-//  $('#sidebar-overlay').click(function(){
-//     // add class active on #sidebar
-//     $('#sidebar').removeClass('active');
-//     // show sidebar overlay
-//     $(this).addClass('d-none');
-//  });
-
-
+function showNotification() {
+    // Check if the screen width is larger than 992px (Bootstrap's large breakpoint)
+    if (window.innerWidth >= 992) {
+      $('.notification').stop(true, true).slideDown().delay(5000).slideUp();
+    }
+}
+  
+  // Run the function every 15 seconds
+  setInterval(showNotification, 15000);
+  
 
 $('.gallery-parent').each(function () {
     // We finding any "gallery-parent" and find child with class "gallery-top" and "gallery-thumbs" for multiple using plugin
@@ -352,7 +341,6 @@ $('.gallery-parent').each(function () {
   let $easyzoom = $('.easyzoom').easyZoom();
 
 
-  
 document.addEventListener('DOMContentLoaded', function () {
     const stars = document.querySelectorAll('.star');
     const ratingValue = document.getElementById('rating-number');

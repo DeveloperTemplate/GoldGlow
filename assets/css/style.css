@@ -350,7 +350,7 @@ a:hover {
     overflow-y: auto;
   }
 
-  .category-menu > ul {
+  .category-menu {
     display: none;
   }
 
@@ -598,6 +598,12 @@ a:hover {
   color: #6c757d;
 }
 
+@media (max-width: 768px){
+  .product-out-stock > div > span {
+      font-size: 11px !important;
+  }
+}
+
 .product .product-head-title {
   text-align: center;
   display: block;
@@ -825,6 +831,12 @@ footer .phone a {
   text-decoration: none;
   color: inherit;
   padding: 40px 0px;
+}
+
+@media (max-width: 992px) {
+  .our-policy .icon-link .col a {
+    padding: 25px 0px !important;
+  }
 }
 
 .our-policy .icon-link .col a:hover svg {
@@ -1075,7 +1087,8 @@ footer .phone a {
   bottom: 20px;
   left: 20px;
   font-size: 15px;
-  width: 350px;
+  max-width: 350px;
+  width: 300px;
   position: fixed;
   z-index: 11;
   font-size: 14px;
