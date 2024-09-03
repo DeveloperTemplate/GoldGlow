@@ -338,7 +338,29 @@ $('.gallery-parent').each(function () {
   });
   
   // activation zoom plugin
-  let $easyzoom = $('.easyzoom').easyZoom();
+function initEasyZoom() {
+    if ($(window).width() >= 992) {
+        // Initialize EasyZoom
+        if (!$('.easyzoom').data('easyZoom')) {
+            let $easyzoom = $('.easyzoom').easyZoom();
+        }
+    } else {
+        // Disable EasyZoom on smaller devices
+        if ($('.easyzoom').data('easyZoom')) {
+            $('.easyzoom').data('easyZoom').teardown();
+        }
+    }
+}
+
+initEasyZoom();
+// Disable click on images
+$('.swiper-slide a').click(function(event) {
+    event.preventDefault();
+});
+
+$(window).resize(initEasyZoom);
+
+
 
 
 document.addEventListener('DOMContentLoaded', function () {
