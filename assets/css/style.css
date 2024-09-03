@@ -10,6 +10,7 @@ body{
 
 a{
   color: var(--theme-secondary);
+  line-height: 1.4;
 }
 
 .bg-primary {
@@ -407,6 +408,8 @@ a:hover{
   font-size: 30px !important;
 }
 
+
+
 .offer-slider-section .owl-nav .owl-prev {
   left: 0px;
 }
@@ -508,7 +511,7 @@ a:hover{
   top: 15px;
   right: 15px;
   padding: 5px 10px;
-  background-color: #f00;
+  background-color: var(--theme-primary); 
   color: #fff;
   border-radius: 3px;
   font-size: 11px;  
@@ -642,7 +645,7 @@ a:hover{
   justify-content: center;
   align-items: center;
   border: 2px solid #FF4800;
-  color: #6c757d;
+  color: #6c757d !important;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   opacity: 1;
@@ -663,7 +666,6 @@ a:hover{
   font-family: 'FontAwesome';
   content: '\f30a';
   font-size: 15px;
-  color: #6c757d;
   font-weight: 400px;
 }
 
@@ -671,8 +673,13 @@ a:hover{
   font-family: 'FontAwesome';
   content: '\f30b';
   font-size: 15px;
-  color: #6c757d;
+  /* color: #6c757d; */
   font-weight: 400px;
+}
+
+.owl-nav .owl-prev:hover, 
+.owl-nav .owl-next:hover {
+  color: var(--theme-primary) !important;
 }
 
 
@@ -900,9 +907,13 @@ footer .email, footer .phone, footer .email a, footer .phone a {
 
 .blog-title a {
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1;
     font-weight: 700;
     text-decoration: none;
+}
+
+.blog-title.h5  {
+  line-height: 1.1 !important;
 }
 
 .blog-desc p {
@@ -1112,7 +1123,7 @@ footer .email, footer .phone, footer .email a, footer .phone a {
 
 .close-button:hover {
   color: #fff;
-  background-color:red;
+  background-color: var(--theme-primary); 
 }
 
 /* contact */
@@ -1152,7 +1163,7 @@ footer .email, footer .phone, footer .email a, footer .phone a {
 }
 
 .pagination li {
-  padding: 8px 10px 8px 10px !important;
+  padding: 5px 10px 5px 10px !important;
 }
 
 /* cart */
@@ -1685,6 +1696,20 @@ overflow-y: auto;
 .color-box {
   width: 14px; 
   height: 14px; 
-  background-color: #63b3ed; 
+  background-color: #C6A97E; 
   border-radius: 50%;
+}
+
+.close-cart {
+  top: -12px; 
+  right: -12px;
+  padding: 2px 4px;
+}
+
+.apply-coupon {
+   background-color: var(--theme-primary); 
+}
+
+.category-tag a:hover {
+    color: var(--theme-secondary) !important;  
 }
