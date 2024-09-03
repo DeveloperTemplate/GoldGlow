@@ -72,7 +72,7 @@ $(".category-slider").owlCarousel({
 
 $(".product-slider").owlCarousel({
     responsiveClass: true,
-    autoplay: true,
+    autoplay: false,
     loop: true,
     dots: false,
     margin: 20,
@@ -129,8 +129,8 @@ $('.brand-logos').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
-    speed: 600, // Adjust the speed for smoother transitions
-    cssEase: 'ease-in-out', // Smooth easing effect
+    speed: 600,
+    cssEase: 'ease-in-out',
     dots: false,
     arrows: false,
     responsive: [
@@ -143,13 +143,13 @@ $('.brand-logos').slick({
         {
             breakpoint: 768,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 3
             }
         },
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 2
             }
         }
     ]
