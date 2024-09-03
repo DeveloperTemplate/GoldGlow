@@ -138,7 +138,7 @@ $('.brand-logos').slick({
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4  // This setting now matches the default
+                slidesToShow: 4
             }
         },
         {
