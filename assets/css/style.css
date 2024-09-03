@@ -1088,8 +1088,7 @@ footer .phone a {
   bottom: 20px;
   left: 20px;
   font-size: 15px;
-  max-width: 350px;
-  width: 300px;
+  width: 350px;
   position: fixed;
   z-index: 11;
   font-size: 14px;
