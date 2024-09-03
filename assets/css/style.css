@@ -1597,10 +1597,15 @@ footer .phone a {
   color: #ccc;
 }
 
+
 .star:hover,
 .star:hover ~ .star,
 .star.selected {
   color: gold;
+}
+
+.star-icon {
+   font-size: 18px;
 }
 
 .cart-section h2 {

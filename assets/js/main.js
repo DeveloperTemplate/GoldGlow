@@ -364,19 +364,16 @@ $(window).resize(initEasyZoom);
 
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const stars = document.querySelectorAll('.star');
-    const ratingValue = document.getElementById('rating-number');
+////// Rating Section ///////
 
-    if (!ratingValue) {
-        console.error('Element with id "rating-number" not found!');
-        return;
-    }
+const stars = document.querySelectorAll('.star');
+const ratingValue = document.getElementById('rating-number');
 
+if (ratingValue) {  // Check if the element exists
     stars.forEach(star => {
         star.addEventListener('click', function () {
             const selectedValue = this.getAttribute('data-value');
-            ratingValue.value = selectedValue;
+            ratingValue.value = selectedValue; // Update the value only if the element exists
             stars.forEach(s => {
                 s.classList.remove('selected');
                 if (s.getAttribute('data-value') <= selectedValue) {
@@ -385,8 +382,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
-});
+} 
 
-  
 
 });
