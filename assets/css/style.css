@@ -599,9 +599,9 @@ a:hover {
   color: #6c757d;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .product-out-stock > div > span {
-      font-size: 11px !important;
+    font-size: 11px !important;
   }
 }
 
@@ -1444,7 +1444,7 @@ footer .phone a {
 }
 
 .swiper-slide {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .swiper-button-next:after,
@@ -1597,7 +1597,6 @@ footer .phone a {
   color: #ccc;
 }
 
-
 .star:hover,
 .star:hover ~ .star,
 .star.selected {
@@ -1605,7 +1604,7 @@ footer .phone a {
 }
 
 .star-icon {
-   font-size: 18px;
+  font-size: 18px;
 }
 
 .cart-section h2 {
